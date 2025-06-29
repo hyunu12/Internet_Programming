@@ -1,0 +1,141 @@
+<!DOCTYPE html> <!-- HTML5 문서 선언 -->
+<html lang="ko"> <!-- 문서 언어를 한국어로 설정 -->
+
+<head>
+    <meta charset="UTF-8"> <!-- 문자 인코딩을 UTF-8로 설정 (한글 지원) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 반응형 화면 설정 -->
+    <title>2019112177 조현우 1-2-3</title> <!-- 브라우저 탭에 표시될 제목 -->
+
+    <style>
+
+        /* 표 전체 스타일 지정 */
+        table {
+            border-collapse: collapse; /* 셀 테두리 겹침 제거 */
+            font-family: Arial, sans-serif; /* 글꼴 지정 */
+            font-size: 14px; /* 글자 크기 */
+        }
+
+        /* 셀 스타일 (제목 셀과 데이터 셀 공통) */
+        th, td {
+            border: 2px solid black; /* 테두리 굵게 설정 */
+            padding: 6px 8px; /* 셀 안 여백 */
+            /*text-align: center; 가로 가운데 정렬(좌우) */
+            vertical-align: middle; /* 세로 가운데 정렬(위아래) */
+            width: 80px; /* 셀 너비 고정 */
+            height: 35px; /* 셀 높이 고정 */
+        }
+        th{
+            text-align:left;
+        }/*th는 기본적으로 글자 가운데 정렬(가로축 가운데, 세로축 가운데
+        이므로 명시적으로 왼쪽 정렬을 해준다)*/
+
+    </style> <!-- 스타일 시트 종료 -->
+
+</head> <!-- head 영역 종료 -->
+
+<body> <!-- 문서 본문 시작 -->
+
+    <!-- 조사 제목 표시 -->
+    <h1>각 반에 알러지를 가지고 있는 학생이 몇명인지 조사해보자.</h1>
+
+    <!-- 표 전체 시작 -->
+    <table>
+
+        <!-- 표 제목 캡션 -->
+        <caption>알러지 조사</caption>
+
+        <!-- 표 헤더 첫 번째 줄 -->
+        <tr>
+            <th rowspan="2">학년</th> <!-- 2행 병합 -->
+            <th rowspan="2">반</th> <!-- 2행 병합 -->
+            <th rowspan="2">종류</th> <!-- 2행 병합 -->
+            <th colspan="2">정원: 30명</th> <!-- 2열 병합 -->
+            <th rowspan="2">비고</th> <!-- 2행 병합 -->
+        </tr>
+
+        <!-- 표 헤더 두 번째 줄 -->
+        <tr>
+            <td>남학생</td>
+            <td>여학생</td>
+        </tr>
+
+        <!-- 본문 시작: 1학년 1반 -->
+        <tr>
+            <th rowspan="6">1</th> <!-- 학년 6행 병합 -->
+            <th rowspan="3">1</th> <!-- 반 3행 병합 -->
+            <td>견과류</td>
+            <td>2</td>
+            <td>6</td>
+            <td rowspan="6">특이사항 작성</td> <!-- 비고 전체 병합 -->
+        </tr>
+        <tr>
+            <td>털</td>
+            <td>8</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>복숭아</td>
+            <td>0</td>
+            <td>2</td>
+        </tr>
+
+        <!-- 본문 계속: 1학년 2반 -->
+        <tr>
+            <th rowspan="3">2</th> <!-- 반 3행 병합 -->
+            <td>견과류</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>털</td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>복숭아</td>
+            <td>1</td>
+            <td>3</td>
+        </tr>
+
+        <!-- 조사 결과: 의미 없는 병합 행 (불필요하지만 유지) -->
+        <tr>
+            <th rowspan="4">조사 결과</th> <!-- 좌측 병합 -->
+            <th rowspan="4"></th>
+            <th rowspan="4"></th>
+            <th rowspan="4"></th>
+            <th rowspan="4">계</th>
+            <th rowspan="4"></th>
+        </tr>
+        <tr></tr> <!-- 빈 행 -->
+        <tr></tr> <!-- 빈 행 -->
+        <tr></tr> <!-- 빈 행 -->
+
+        <!-- 조사 결과 통계 데이터 시작 -->
+        <tr>
+            <th rowspan="3">종류</th> <!-- 종류 라벨 3행 병합 -->
+            <td>견과류</td>
+            <td>14</td>
+            <td>16</td>
+            <td>30</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>털</td>
+            <td>15</td>
+            <td>4</td>
+            <td>19</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>복숭아</td>
+            <td>7</td>
+            <td>7</td>
+            <td>14</td>
+            <td></td>
+        </tr>
+
+    </table> <!-- 표 끝마침 -->
+
+</body> <!-- 문서 본문 종료 -->
+
+</html> <!-- 문서 종료 -->
