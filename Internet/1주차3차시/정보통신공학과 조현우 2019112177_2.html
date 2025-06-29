@@ -1,0 +1,99 @@
+<!--수강생 여러분들이 최근 관람한 or 좋아하는 3가지 영화 리뷰 표를 작성-->
+<!DOCTYPE html> <!-- HTML5 문서 선언 -->
+<html lang="ko"> <!-- 한국어 페이지로 설정 -->
+
+<head> <!-- 문서 정보 시작 -->
+  <meta charset="UTF-8"> <!-- 문자 인코딩 UTF-8 설정 -->
+  <title>영화 리뷰</title> <!-- 브라우저 탭 제목 -->
+  <style>
+    table, th, td {
+      border: 1px solid black; /* 테두리 설정 */
+      border-collapse: collapse; /* 테두리 겹침 제거 */
+      padding: 8px; /* 셀 안쪽 여백 */
+    }
+  </style>
+</head> <!-- head 종료 -->
+
+<body> <!-- 본문 시작 -->
+
+  <!-- 영화 리뷰 부제 -->
+  <h2>영화 리뷰</h2>
+
+  <!-- 오디오 다운로드 링크 -->
+  <p><a href="EmbraceableYou.mp3" download>음원 다운로드</a></p> <!-- 로컬 서버 환경에서 작동 -->
+
+  <!-- 영화 테이블 시작 -->
+  <table>
+    <!-- 열 설명 헤더 (1행) -->
+    <caption>최근에 본 영화 3가지</caption> <!-- 표 제목 -->
+    <tr>
+      <th>포스터</th>
+      <th>제목</th>
+      <th>장르</th>
+      <th>평점</th>
+      <th>감독</th>
+      <th>감상평</th>
+    </tr>
+
+    <!-- 첫 번째 영화: 탑건 매버릭 -->
+    <tr>
+      <td>
+        <!-- 이미지 클릭 시 네이버 영화 링크로 이동, 새 창 -->
+        <a href="https://search.naver.com/search.naver?sm=tab_hty.top&where=nexearch&ssc=tab.nx.all&query=%ED%83%91%EA%B1%B42&oquery=%EA%B7%B8%EB%A6%B0%EB%B6%81&tqi=jaz55wqVN8wssdFESZGssssst7d-352983&ackey=hs4szgoo" target="_blank">
+          <img src="https://i.namu.wiki/i/JaFEOYpTKZ3YhwSGQ_GQz-CnOzYtIN2gBT2STezpl-4qE3bqEmNJicOI9Yizyva317sMaexMDsgPYhCZuMqrrQ.webp" width="120" alt="탑건2 포스터">
+        </a>
+      </td>
+      <td>탑건: 매버릭</td>
+      <td>액션</td>
+      <td>9.5</td>
+      <td>조셉 코신스키</td>
+      <td>
+        <ol>
+          <li>감동적인 비행 액션</li>
+          <li>원작 팬이라면 더욱 즐길 수 있는 영화</li>
+        </ol>
+      </td>
+    </tr>
+
+    <!-- 두 번째 영화: 그린북 -->
+    <tr>
+      <td>
+        <a href="https://search.naver.com/search.naver?sm=tab_hty.top&where=nexearch&ssc=tab.nx.all&query=%EA%B7%B8%EB%A6%B0%EB%B6%81&oquery=%ED%83%91%EA%B1%B42&tqi=jaz6rwpzL8VssDoVb7dssssstP8-242068&ackey=r5pk91ch" target="_blank">
+          <img src="https://i.namu.wiki/i/fK5H7CJOmSYjkncp45D9L9tGzXw4LuevP1oCGQUuQ28s0H0kF4LHae9lzHrrtjuWVGe0Bw5ANEghOpcUkx-8Og.webp" width="120" alt="그린북 포스터">
+        </a>
+      </td>
+      <td>그린북</td>
+      <td>드라마</td>
+      <td>9.0</td>
+      <td>피터 패럴리</td>
+      <td>
+        <ol type="A">
+          <li>인종과 우정을 모두 다룬 감동적인 영화</li>
+          <li>실화 기반이라 더 몰입할 수 있음</li>
+        </ol>
+      </td>
+    </tr>
+
+    <!-- 세 번째 영화: 하얼빈 -->
+    <tr>
+      <td>
+        <a href="https://search.naver.com/search.naver?sm=tab_sug.top&where=nexearch&ssc=tab.nx.all&query=%ED%95%98%EC%96%BC%EB%B9%88+%EC%98%81%ED%99%94&oquery=%ED%95%98%EC%96%BC%EB%B9%88&tqi=jaz6JlqX5E0ssu6kJjNssssstz0-111241&acq=%ED%95%98%EC%96%BC%EB%B9%88&acr=1&qdt=0&ackey=kvtgy42w" target="_blank">
+          <img src="https://i.namu.wiki/i/dik8T0YPvG_fbOhQPZHi4xmrPrWZNH5z0JKa-qhh6bmZBeniOg2ITiCb5ffhSvQoI16doD2PfodFkxdMMXKMJQ.webp" width="120" alt="하얼빈 포스터">
+        </a>
+      </td>
+      <td>하얼빈</td>
+      <td>드라마</td>
+      <td>8.5</td>
+      <td>우민호</td>
+      <td>
+        <ol type="i">
+          <li>배우들의 연기력이 높다</li>
+          <li>역사 영화지만 결말을 알고 있어도 전혀 지루하지 않다</li>
+        </ol>
+      </td>
+    </tr>
+  </table> <!-- 테이블 끝 -->
+
+</body> <!-- 본문 끝 -->
+
+</html> <!-- HTML 문서 끝 -->
